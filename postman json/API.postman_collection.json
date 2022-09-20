@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "458bf47d-aa13-4311-81cc-13a139612d67",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10082003"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Me",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/sapi/user/me",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"sapi",
+								"user",
+								"me"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Vast service",
+			"item": [
+				{
+					"name": "Get by id",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/sapi/creative/7106",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"sapi",
+								"creative",
+								"7106"
+							],
+							"query": [
+								{
+									"key": "rpctoken",
+									"value": "{{hotpToken}}",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"7106\",\n    \"type\": \"MediaClip\",\n    \"mediatype\": \"video\",\n    \"fitmode\": \"\",\n    \"usetype\": \"commercial\",\n    \"location\": \"\",\n    \"sourcetype\": \"on_demand\",\n    \"originalfilename\": \"AdobeStock_378324939_Video_HD_Preview.mov\",\n    \"length\": 10,\n    \"sourceid\": \"\",\n    \"title\": \"Product Sample II\",\n    \"description\": \"\",\n    \"deeplink\": \"\",\n    \"gendeeplink\": \"https://bb.local.dev.bbvms.com/view/default/7106.html?title=Product Sample II\",\n    \"copyright\": \"\",\n    \"author\": \"\",\n    \"status\": \"published\",\n    \"publicationid\": \"19\",\n    \"createddate\": \"2022-01-07T13:55:09Z\",\n    \"updateddate\": \"2022-09-15T14:13:52Z\",\n    \"publisheddate\": \"2022-01-07T13:55:09Z\",\n    \"views\": 0,\n    \"width\": 1920,\n    \"height\": 1080,\n    \"dar\": \"16:9\",\n    \"originalWidth\": 1920,\n    \"originalHeight\": 1080,\n    \"createdBy\": \"t.kleijn@bluebillywig.com\",\n    \"updatedBy\": \"d.arias-maat@bluebillywig.com\",\n    \"date\": {\n    \"created\": \"Fri, 07 Jan 2022 13:55:09 +0000\",\n    \"updated\": \"Thu, 15 Sep 2022 14:13:52 +0000\",\n    \"published\": \"Fri, 07 Jan 2022 13:55:09 +0000\"\n    },\n    \"src\": \"/upload/bb.local.dev/2022/01/07/95c7b3748c7cb9ad468ace16cef88b61/95c7b3748c7cb9ad468ace16cef88b61.mov\",\n    \"cat\": null,\n    \"thumbnails\": [\n    {\n        \"src\": \"/testsuite/media/2022/01/07/7106-1641560123387980/7106-1641560123387980_2.jpg\",\n        \"width\": \"1920\",\n        \"height\": \"1080\",\n        \"main\": true,\n        \"srcPrefix\": \"//bb.local.dev.bbvms.com/image/320/180\"\n    },\n    {\n        \"src\": \"/testsuite/media/2022/01/07/7106-1641560123387980/7106-1641560123387980_4.jpg\",\n        \"width\": \"1920\",\n        \"height\": \"1080\",\n        \"main\": false,\n        \"srcPrefix\": \"//bb.local.dev.bbvms.com/image/320/180\"\n    },\n    {\n        \"src\": \"/testsuite/media/2022/01/07/7106-1641560123387980/7106-1641560123387980_6.jpg\",\n        \"width\": \"1920\",\n        \"height\": \"1080\",\n        \"main\": false,\n        \"srcPrefix\": \"//bb.local.dev.bbvms.com/image/320/180\"\n    },\n    {\n        \"src\": \"/testsuite/media/2022/01/07/7106-1641560123387980/7106-1641560123387980_8.jpg\",\n        \"width\": \"1920\",\n        \"height\": \"1080\",\n        \"main\": false,\n        \"srcPrefix\": \"//bb.local.dev.bbvms.com/image/320/180\"\n    }\n    ],\n    \"movingThumbnails\": [\n    {\n        \"src\": \"/testsuite/media/2022/01/07/7106-1641560124080423/movingthumbnail-360-7106-1641560124080423.mp4\",\n        \"width\": \"640\",\n        \"height\": \"360\",\n        \"main\": false\n    },\n    {\n        \"src\": \"/testsuite/media/2022/01/07/7106-1641560124080423/movingthumbnail-480-7106-1641560124080423.mp4\",\n        \"width\": \"854\",\n        \"height\": \"480\",\n        \"main\": false\n    },\n    {\n        \"src\": \"/testsuite/media/2022/01/07/7106-1641560124080423/movingthumbnail-720-7106-1641560124080423.mp4\",\n        \"width\": \"1280\",\n        \"height\": \"720\",\n        \"main\": false\n    }\n    ],\n        \"assets\": [\n    {\n        \"mediatype\": \"MP4_MAIN\",\n        \"id\": \"1641560123502095\",\n        \"status\": \"active\",\n        \"src\": \"/testsuite/media/2022/01/07/7106_h264-hd-720p.mp4\",\n        \"length\": \"10\",\n        \"exactlength\": \"10000\",\n        \"width\": \"1280\",\n        \"height\": \"720\",\n        \"bandwidth\": \"2000\",\n        \"filesize\": \"1924307\",\n        \"jobdefid\": \"43\",\n        \"mimetype\": \"video/mp4; codecs=\\\"avc1.42c01f\\\"\"\n    },\n    {\n        \"mediatype\": \"MP4_HD\",\n        \"id\": \"1641560123579940\",\n        \"status\": \"active\",\n        \"src\": \"/testsuite/media/2022/01/07/7106_h264-hd-1080p.mp4\",\n        \"length\": \"10\",\n        \"exactlength\": \"10000\",\n        \"width\": \"1920\",\n        \"height\": \"1080\",\n        \"bandwidth\": \"3000\",\n        \"filesize\": \"2332908\",\n        \"jobdefid\": \"47\",\n        \"mimetype\": \"video/mp4; codecs=\\\"avc1.4d4828\\\"\"\n    },\n    {\n        \"mediatype\": \"MP4_MAIN\",\n        \"id\": \"1641560123660896\",\n        \"status\": \"active\",\n        \"src\": \"/testsuite/media/2022/01/07/7106_h264-768x432-1200.mp4\",\n        \"length\": \"10\",\n        \"exactlength\": \"10000\",\n        \"width\": \"768\",\n        \"height\": \"432\",\n        \"bandwidth\": \"1200\",\n        \"filesize\": \"492486\",\n        \"jobdefid\": \"41\",\n        \"mimetype\": \"video/mp4; codecs=\\\"avc1.4d481e\\\"\"\n    },\n    {\n        \"mediatype\": \"MP4_IPOD\",\n        \"id\": \"1641560123741705\",\n        \"status\": \"active\",\n        \"src\": \"/testsuite/media/2022/01/07/7106_h264-512x288-400.mp4\",\n        \"length\": \"10\",\n        \"exactlength\": \"10000\",\n        \"width\": \"512\",\n        \"height\": \"288\",\n        \"bandwidth\": \"400\",\n        \"filesize\": \"318638\",\n        \"jobdefid\": \"44\",\n        \"mimetype\": \"video/mp4; codecs=\\\"avc1.42c015\\\"\"\n    },\n    {\n        \"mediatype\": \"MP4_IPOD\",\n        \"id\": \"1641560123827294\",\n        \"status\": \"active\",\n        \"src\": \"/testsuite/media/2022/01/07/7106_h264-768x432-800.mp4\",\n        \"length\": \"10\",\n        \"exactlength\": \"10000\",\n        \"width\": \"768\",\n        \"height\": \"432\",\n        \"bandwidth\": \"800\",\n        \"filesize\": \"2822840\",\n        \"jobdefid\": \"45\",\n        \"mimetype\": \"video/mp4; codecs=\\\"avc1.42c01e\\\"\"\n    },\n    {\n        \"mediatype\": \"MP4_TIMELINE\",\n        \"id\": \"1641560123909584\",\n        \"status\": \"active\",\n        \"src\": \"/testsuite/media/2022/01/07/7106_h264-768x432-timeline_\",\n        \"length\": \"10\",\n        \"exactlength\": \"\",\n        \"width\": \"768\",\n        \"height\": \"432\",\n        \"bandwidth\": \"600\",\n        \"filesize\": \"354285\",\n        \"jobdefid\": \"46\"\n    },\n        {\n        \"mediatype\": \"MP4_HD\",\n        \"id\": \"1641560123995913\",\n        \"status\": \"active\",\n        \"src\": \"/testsuite/media/2022/01/07/7106_omroepbrabant-ehq.mp4\",\n        \"length\": \"10\",\n        \"exactlength\": \"10000\",\n        \"width\": \"1920\",\n        \"height\": \"1080\",\n        \"bandwidth\": \"3000\",\n        \"filesize\": \"2083201\",\n        \"jobdefid\": \"148\",\n        \"mimetype\": \"video/mp4; codecs=\\\"avc1.4d4828\\\"\"\n        },\n        {\n        \"mediatype\": \"MP4_PREVIEW\",\n        \"id\": \"1641560124161978\",\n        \"status\": \"active\",\n        \"src\": \"/testsuite/media/2022/01/07/7106_videopreview.mp4\",\n        \"length\": \"12\",\n        \"exactlength\": \"12000\",\n        \"width\": \"320\",\n        \"height\": \"180\",\n        \"bandwidth\": \"150\",\n        \"filesize\": \"47156\",\n        \"jobdefid\": \"153\",\n        \"mimetype\": \"video/mp4; codecs=\\\"avc1.42c00b\\\"\"\n        }\n    ],\n    \"hasJobs\": true,\n    \"hasFailedJobs\": false,\n    \"hasRunningJobs\": false,\n    \"hasNewJobs\": false,\n    \"transcodingFinished\": true,\n    \"isYoutubeImport\": false,\n    \"subtitles\": null,\n    \"nametags\": null,\n    \"exports\": null,\n    \"timelines\": null,\n    \"adunits\": null,\n    \"audiotracks\": null,\n    \"replacesrc\": \"\",\n    \"subusetype\": [\"vast_creative\"],\n    \"isPrefetch\": true,\n    \"s3Info\": \"{\\\"ResponseMetadata\\\": {\\\"RequestId\\\": \\\"YYJKJWR2M02QN2P5\\\", \\\"HostId\\\": \\\"mCm2USULHBChsQADYd+FrvFG6gCEwVf0Su3aOoneNAbG2+o2EC68oUItKCB6RIJDufsG+K97cwI=\\\", \\\"HTTPStatusCode\\\": 200, \\\"HTTPHeaders\\\": {\\\"x-amz-id-2\\\": \\\"mCm2USULHBChsQADYd+FrvFG6gCEwVf0Su3aOoneNAbG2+o2EC68oUItKCB6RIJDufsG+K97cwI=\\\", \\\"x-amz-request-id\\\": \\\"YYJKJWR2M02QN2P5\\\", \\\"date\\\": \\\"Fri, 07 Jan 2022 12:55:17 GMT\\\", \\\"last-modified\\\": \\\"Fri, 07 Jan 2022 12:55:14 GMT\\\", \\\"etag\\\": \\\"\\\\\\\"fdefcb51e692399b418c80e58e75f13d\\\\\\\"\\\", \\\"x-amz-meta-uploadidentifier\\\": \\\"95c7b3748c7cb9ad468ace16cef88b61\\\", \\\"x-amz-meta-qqfilename\\\": \\\"AdobeStock_378324939_Video_HD_Preview.mov\\\", \\\"content-disposition\\\": \\\"attachment; filename=AdobeStock_378324939_Video_HD_Preview.mov\\\", \\\"accept-ranges\\\": \\\"bytes\\\", \\\"content-type\\\": \\\"video/quicktime\\\", \\\"server\\\": \\\"AmazonS3\\\", \\\"content-length\\\": \\\"1540960\\\"}, \\\"RetryAttempts\\\": 0}, \\\"AcceptRanges\\\": \\\"bytes\\\", \\\"LastModified\\\": \\\"2022-01-07T12:55:14+00:00\\\", \\\"ContentLength\\\": 1540960, \\\"ETag\\\": \\\"\\\\\\\"fdefcb51e692399b418c80e58e75f13d\\\\\\\"\\\", \\\"ContentDisposition\\\": \\\"attachment; filename=AdobeStock_378324939_Video_HD_Preview.mov\\\", \\\"ContentType\\\": \\\"video/quicktime\\\", \\\"Metadata\\\": {\\\"uploadidentifier\\\": \\\"95c7b3748c7cb9ad468ace16cef88b61\\\", \\\"qqfilename\\\": \\\"AdobeStock_378324939_Video_HD_Preview.mov\\\"}, \\\"publication\\\": \\\"bb.local.dev\\\", \\\"format\\\": {\\\"filename\\\": \\\"https://s3.eu-west-1.amazonaws.com/mm.shared.test.bbvms.com/upload/bb.local.dev/2022/01/07/95c7b3748c7cb9ad468ace16cef88b61/95c7b3748c7cb9ad468ace16cef88b61.mov\\\", \\\"nb_streams\\\": 1, \\\"nb_programs\\\": 0, \\\"format_name\\\": \\\"mov,mp4,m4a,3gp,3g2,mj2\\\", \\\"format_long_name\\\": \\\"QuickTime / MOV\\\", \\\"start_time\\\": \\\"0:00:00.000000\\\", \\\"duration\\\": \\\"0:00:10.000000\\\", \\\"size\\\": \\\"1.469574 Mibyte\\\", \\\"bit_rate\\\": \\\"1.232768 Mbit/s\\\", \\\"probe_score\\\": 100, \\\"tags\\\": {\\\"major_brand\\\": \\\"isom\\\", \\\"minor_version\\\": \\\"1\\\", \\\"compatible_brands\\\": \\\"isomavc1mp42\\\", \\\"creation_time\\\": \\\"2020-09-16T10:32:01.000000Z\\\"}}, \\\"bucket\\\": \\\"mm.shared.test.bbvms.com\\\", \\\"key\\\": \\\"upload/bb.local.dev/2022/01/07/95c7b3748c7cb9ad468ace16cef88b61/95c7b3748c7cb9ad468ace16cef88b61.mov\\\"}\",\n    \"uploading\": false,\n    \"playoutoverride\": null,\n    \"omiddata\": [\n        {\n            \"verificationVendor\":\"Test vendor\",\n            \"verificationScriptUrl\":\"Script url\",\n            \"verificationParameters\":\"parameters\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/sapi/creative/7106",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"sapi",
+								"creative",
+								"7106"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/sapi/creative/10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"sapi",
+								"creative",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Solr",
+			"item": [
+				{
+					"name": "Get media clip",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/mediaclip?action=getSolr&id=7106",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"mediaclip"
+							],
+							"query": [
+								{
+									"key": "action",
+									"value": "getSolr"
+								},
+								{
+									"key": "id",
+									"value": "7106"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{rpcToken}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "rpctoken",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.sendRequest(\"http://localhost:4438/token\", function (err, response) {",
+					"    let jsonData = response.json();",
+					"    pm.environment.set(\"rpcToken\", jsonData.timebasedToken);",
+					"});"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

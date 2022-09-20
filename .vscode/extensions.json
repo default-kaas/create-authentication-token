@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "aaron-bond.better-comments",
+        "wix.vscode-import-cost",
+        "oderwat.indent-rainbow",
+        "visualstudioexptteam.vscodeintellicode",
+        "esbenp.prettier-vscode",
+        "richie5um2.vscode-sort-json",
+        "vscode-icons-team.vscode-icons"
+    ]
+}
