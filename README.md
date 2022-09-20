@@ -1,5 +1,5 @@
 # Create authentication token application
-This project could be usefull for testing api endpoints.
+This project could be useful for testing api endpoints.
 
 ## Generate rpc token end-point
 ### .env
